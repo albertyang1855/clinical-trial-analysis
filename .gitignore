@@ -1,0 +1,110 @@
+# ── Jupyter Notebooks ─────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# ── Virtual environments ───────────────────────────────────────
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ── Data files — CRITICAL for pharma work ─────────────────────
+# Never commit raw or processed clinical data
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.db
+*.sqlite
+*.sqlite3
+
+# Exception: keep small public reference files if needed
+# !data/public/nhanes_sample.csv
+
+# ── Credentials and secrets — NEVER commit these ──────────────
+.env
+.env.local
+.env.*
+*.key
+*.pem
+secrets.json
+config.json
+credentials.json
+
+# ── OS files ──────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── IDE and editor files ───────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# ── Output files ──────────────────────────────────────────────
+outputs/
+results/
+figures/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.svg
+
+# Exception: keep figures you explicitly want in the repo
+# !notebooks/figures/km_curve_final.png
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Models and large files ────────────────────────────────────
+*.model
+*.joblib
+*.h5
+models/
+
+# ── R files (for when you add mrgsolve / R work later) ────────
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
